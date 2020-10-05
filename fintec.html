@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {background-color: blue;}
+h1  {color: white;}
+    font-family: verdana;
+    font-size: 300%;
+}
+h2  {color: white;
+    font-family: verdana;
+    font-size: 300%;
+}
+p {
+    color: white;
+    font-family: courier;
+    font-size: 160%;
+}
+
+</style>
+<title>PUBLIC TRANSPORT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" type="text/css"href="my css.css"/>
+<script type="text/javascript" src="scripts/main.js"></script>
+<script type="text/javascript">
+  alert("FINTECH PUBLIC TRANSPORT");
+ // Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+
+}
+
+document.querySelector('html').onclick = function() {
+    alert('Ouch! Stop poking me!');
+
+}	
+
+document.querySelector('html').onclick = function() {};
+
+let myHTML = document.querySelector('html');
+myHTML.onclick = function() {};
+</script>
+</head>
+<body>
+<h1 class="w3-padding-64 w3-center">FINTECH PUBLIC TRANSPORT BOOKING</h1>
+<h2 class="w3-padding-64 w3-center">Transportation at your convinience</h2>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>FIN<br>TECH</b></h3>
+   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>  
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Already have an account?</a>
+  <a href="create account.html" onclick="w3_close()" class="w3-bar-item w3-button">CREATE ACCOUNT</a>
+  <a href="about us.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">HAPPY DAY</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+ 
+<!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="bus.jpg" style="width:290%" onclick="onClick(this)" alt="Book for buses online">
+      <img src="pic.jpg" style="width:290%" onclick="onClick(this)" alt="Book for Public transport buses">
+      <img src="voila computer.jpg" style="width:290%" onclick="onClick(this)" alt="Just using your laptop or phone by visiting our website">
+      <img src="dark blue.jpg" style="width:290%" onclick="onClick(this)" alt="Travel across lagos city">
+    </div>
+   <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">&laquo;</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">&raquo;</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0"onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span> >&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">>
+      <p id="caption"></p>
+    </div>
+  </div>
+      <h4 class="w3-padding-16">How much do We charge</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Cheap</li>
+            <li class="w3-padding-16">Agbara - Mytoo</li>
+            <li class="w3-padding-16">Mainland - Lekki</li>
+            <li class="w3-padding-16">Badagry - Ojo</li>
+            <li class="w3-padding-16"> Ojota - Agege</li>
+            <li class="w3-padding-16">
+              <h2>N500</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Expensive</li>
+            <li class="w3-padding-16">Lagos - Abuja</li>
+            <li class="w3-padding-16">Lagos - ondo</li>
+            <li class="w3-padding-16">Lagos to southsouth region</li>
+            <li class="w3-padding-16">Lagos - northern region</li>
+            <li class="w3-padding-16">
+              <h2>$ 25</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <h3>Info</h3>
+        <p>Want to book use cheap with less queing? contact us.</p>      
+      </div>
+    
+      <div class="w3-third">
+        <h3>Blog Post</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="moving cars.jpg" class="w3-left w3-margin-right" 
+style="width:50px">
+             <span class="w3-large">Saying</span><br>
+             <span>Know yourself, be yourself and appreciate yourself</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="moving car.jpg" class="w3-left w3-margin-right" 
+style="width:50px">
+            <span class="w3-large">Ease on the road</span><br>
+            <span>Your saftey and convinience is our satisfaction</span>
+          </li> 
+       </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Travelling</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">United states public transport</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Remote Work websites</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Internship</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Stay safe</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">github</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Facebook</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Reduce spread of covid 19 using online booking site</span>
+ <span> class="w3-tag w3-dark-grey w3-small w3-marginbottom">Kubernetes</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Comfort in the bus</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Linked-in</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Wattsap</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cloud Native</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Github</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.juliusotitolaiye.website" title="Otis website" target="_blank" class="w3-hover-opacity">Fintech42@gmail.com</a></div>
+
+<!-- End page content -->
+</div>
+</body>
+</body>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+document.querySelector('html').onclick = function() {
+    alert('Ouch! Stop poking me!');
+}	
+
+document.querySelector('html').onclick = function() {};
+
+let myHTML = document.querySelector('html');
+myHTML.onclick = function() {};
+</script>
+</html>
